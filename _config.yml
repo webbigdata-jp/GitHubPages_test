@@ -33,6 +33,7 @@ github_username:  jekyll
 remote_theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-polyglot
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,3 +54,13 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+#
+
+languages: ["ja", "en", "zh"]
+default_lang: "ja"
+exclude_from_localization: ["assets/css", "assets/img"]
+parallel_localization: true
+
+sass:
+  sourcemap: never
+
