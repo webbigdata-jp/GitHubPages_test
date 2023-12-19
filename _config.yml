@@ -48,10 +48,10 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: https://twitter.com/llm_jp
+      url: https://twitter.com/webbigdata
     - label: "Github"
       icon: "fab fa-fw fa-github"
-      url: https://github.com/llm-jp
+      url: https://webbigdata.jp/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
