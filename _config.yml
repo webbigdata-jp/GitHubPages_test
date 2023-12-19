@@ -92,3 +92,10 @@ sass:
 
 atom_feed:
   hide: true
+
+languages: ["ja", "en", "zh"]
+default_lang: "ja"
+exclude_from_localization: ["assets/css", "assets/img"]
+parallel_localization: true
+
+
