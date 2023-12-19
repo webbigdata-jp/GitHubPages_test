@@ -18,25 +18,40 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: test page title
+subtitle: test page subtitle
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  githab pages exampleの多言語対応テストです
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  webbigdata-jp
+
 
 # Build settings
 remote_theme: mmistakes/minimal-mistakes@4.24.0
+minimal_mistakes_skin: contrast
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-polyglot
+
+include:
+  - _pages
+future: true
+
+logo: "/assets/images/logo2.png"
+
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: https://twitter.com/llm_jp
+    - label: "Github"
+      icon: "fab fa-fw fa-github"
+      url: https://github.com/llm-jp
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -57,13 +72,23 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-#
 
-languages: ["ja", "en", "zh"]
-default_lang: "ja"
-exclude_from_localization: ["assets/css", "assets/img"]
-parallel_localization: true
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      # author_profile: true
+      # read_time: true
+      # comments: true
+      show_date: true
+      # share: true
+      # related: true
 
 sass:
-  sourcemap: never
+  quiet_deps: true
 
+atom_feed:
+  hide: true

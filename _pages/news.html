@@ -1,0 +1,11 @@
+---
+title: News
+layout: archive
+permalink: /news/
+---
+
+{% for post in site.posts %}
+  {% unless post.hidden %}
+    {% include archive-single.html %}
+  {% endunless %}
+{% endfor %}

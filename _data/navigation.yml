@@ -1,0 +1,7 @@
+main:
+  - title: News
+    url: /news/
+  - title: リリース
+    url: /release/
+  - title: メンバー
+    url: /members/
