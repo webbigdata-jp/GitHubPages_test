@@ -2,6 +2,7 @@
 layout: single
 title:  "i18n test"
 date:   2023-12-19 11:53:53 +0900
+lang: en
 categories: general
 ---
 

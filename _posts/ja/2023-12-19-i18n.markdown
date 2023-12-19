@@ -2,6 +2,7 @@
 layout: single
 title:  "他言語対応テスト"
 date:   2023-12-19 11:53:53 +0900
+lang: ja
 categories: general
 ---
 
